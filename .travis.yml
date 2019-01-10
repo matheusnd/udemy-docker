@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t matheusnd/udemy-docker -f Dockerfile.dev .
 
-scritpt:
+script:
   - docker run matheusnd/udemy-docker npm run test -- --coverage
